@@ -1,0 +1,38 @@
+/* Keyframes for letter slide-in effect */
+@keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  .slide-letter {
+    display: inline-block;
+    animation: slideIn 8s ease forwards; 
+  }
+  
+  .slide-letter.exit {
+    animation: slideOut 2s ease-in-out forwards;
+  }
+  
